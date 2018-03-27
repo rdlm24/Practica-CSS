@@ -1,0 +1,67 @@
+diff a/css/estilos.css b/css/estilos.css	(rejected hunks)
+@@ -0,0 +1,65 @@
++
++body{
++font-family: Arial,Helvetica,sans-serif;
++}
++
++header{
++  background-color: #5b7989;
++  height: 100px;
++  width: 100%;
++  border-radius: 10px 10px 0px 0px;
++  /*debo poner el border equivalente a otros navegadores*/
++
++
++}
++header h1{
++  color: white;
++  text-shadow: 2px 4px 3px #02010a;
++  /* font-size: 2vw; */
++  float: left;
++  margin: 30px 0px 0px 10px;
++
++}
++
++header nav{
++/* margin: 30px 10px; */
++}
++
++nav {
++  height: 100%;
++}
++
++ul{
++  list-style-type: none;
++  margin: 0;
++  margin-right: 30px;
++  overflow: hidden;
++  height: 100%;
++  /* width: 200px;
++  float: right; */
++  background-color: red;
++
++}
++li{
++  float: right;
++  margin: 0px 5px;
++  padding: 40px 0px;
++  height: 100%;
++  background-color: rgb(213, 156, 64);
++}
++
++/*
++header nav ul{
++  list-style-type: none;
++  margin: 0;
++  overflow: hidden;
++  height: 100%;
++}
++
++header nav ul li{
++  display: block;
++  margin: 0px 5px;
++  padding: 15px 0px;
++  height: 100%;
++  float: right;
++} */
