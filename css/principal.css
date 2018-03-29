@@ -1,4 +1,5 @@
 
+/*------Cuerpo de pagina------*/
 body{
 /* font-family: Arial,Helvetica,sans-serif; */
 font-family: 'Dancing Script', cursive;
@@ -7,10 +8,26 @@ background-color: whitesmoke;
 
 #wrapper
 {
-	width: 960px;
+	width: 900px;
 	margin: 0 auto;
 	box-shadow: 5px 10px 18px #888888;
+	animation: rebote 0.8s;
 }
+
+@-webkit-keyframes rebote{
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%;
+	}
+
+	}
 
 header{
   background-color: #5b7989;
@@ -30,7 +47,6 @@ header h1{
 	padding-left: 10px;
   /* margin: 30px 0px 0px 10px; */
 	/* padding: 10px; */
-
 }
 
 
@@ -77,52 +93,66 @@ nav div ul li a:hover{
  	text-decoration: none;
 }
 
-/* nav div ul li:hover{
- background-color: whitesmoke;
-} */
 
 
-article
-{
-	box-sizing: border-box;
-	float:left;
 
-	height: 100%;
-	background-color: grey;
-	padding: 2%;
-	text-align: center;
-	height: 400px;
+/*------Pie de pagina------*/
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: #C6d5c5;
+  clear: both;
 }
 
-	#columna1
-	{
-	background-color: #82c3a6;
-	width: 100%;
-	}
+.EsquinasInferiores{
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+}
 
-	#columna2
-	{
-	background-color: #d5c75f;
-	width: 50%;
+footer{
+   display: flex;
+	 /* float: left;  */
+	 flex-flow: row;
+	 font-size: 0.9rem;
+}
 
-	}
-	#columna3
-	{
-	background-color: #d5c75f;
-	width: 50%;
+.columnasfooter{
+	box-sizing: border-box;
+  width: 25%;
+  padding: 3%;
+  text-align: left;
+  height: 300px;
+  /* border: 1px solid black; */
+}
+.contactos{}
+.terminos{}
+.redessociales{}
+.copyright{}
 
-	}
+.ulredes{
+  list-style-type: none;
+  /* margin-left: -45px; */
+  padding-left: 0;
+}
+.liredes{
+padding: 5px;
 
-	.imgcolumna{
-		height: 360px;
-		width: 90%;
-		padding-top: 0px;
-			border: 1px solid black;
-	}
+}
+.liredes a{
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.liredes a img{
+  width: 20px;
+  height: 20px;
+}
+/* [href^="https://www.facebook"]{
+background: url("../img/fb.svg")
+no-repeat center left;
+} */
 
-
+/*Medias querys*/
 @media screen and (max-width: 960px){
-
 	#wrapper
 	{
 		width: 100%;
@@ -132,8 +162,7 @@ article
 
 @media screen and (max-width: 860px){
 
-  header
-  {
+  header{
   width:100%;
   height: 100px;
   }
@@ -148,7 +177,6 @@ article
     width: 100%;
     margin: 2px;
   }
-
   .menu{
     width: 100%;
     text-align: center;
@@ -158,106 +186,34 @@ article
     padding: 5px;
   }
 
-}
-
-/* @media screen and (max-width: 495px){
-
-	#wrapper
-	{
-		width: 100%;
-		margin: 0 auto;
+	footer{
+		 display: flex;
+		flex-flow: column;
+		height: auto;
 	}
-  header
-  {
+	.columnasfooter{
+			width: 50%;
+	}
 
-  height: 150px;
-  }
-} */
-
+}
 
 
 @media screen and (max-width: 545px){
 
-#wrapper
-	{
-		width: 100%;
-		margin: 0 auto;
-	}
-	#columna1
-	{
-	width: 100%;
-	}
-	#columna2
-	{
-	width: 100%;
-	}
-	#columna3
-	{
-	width: 100%;
-	}
-
-	header
-  {
-  /* width:100%; */
+	header {
   height: 150px;
   }
 
-	.li{
-		 /* margin: 0 5px; */
-		 padding: 15px 0;
+	.li {
+		padding: 15px 0;
 	 }
-header h1{
-	padding-left: 0;
+
+	header h1 {
+		padding-left: 0;
+   }
+
+	.columnasfooter{
+		width: 100%;
+	 }
 
 }
-}
-
-/*------Hojas de estilos para el pie de pagina------*/
-footer{
-	width: 100%;
-	height: 300px;
-	background-color: #C6d5c5;
-	clear: both;
-}
-
-.bordeEsquinasInferiores{
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius: 10px;
-}
-
-.columnasfooter{
-	float: left;
-	box-sizing: border-box;
-	width: 25%;
-	/* background-color: grey; */
-	padding: 2%;
-	text-align: left;
-	height: 300px;
-	/* border: 1px solid black; */
-}
-.contactos{}
-.terminos{}
-.redessociales{}
-.copyright{}
-
-.ulredes{
-	list-style-type: none;
-	/* margin-left: -45px; */
-	padding-left: 0;
-}
-.liredes{
-padding: 5px;
-
-}
-.liredes a{
-	font-size: 1.5em;
-	text-decoration: none;
-}
-.liredes a img{
-	width: 20px;
-	height: 20px;
-}
-/* [href^="https://www.facebook"]{
-background: url("../img/fb.svg")
-no-repeat center left;
-} */
